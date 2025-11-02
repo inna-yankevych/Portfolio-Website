@@ -1,0 +1,542 @@
+:root {
+    --background-color: #e3d2c6;
+    --secondary-color: #f2e7d3;
+    --accent-color: #4f5f2c;
+    --text-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1 {
+    background-color: var(--secondary-color);
+    padding: 2%;
+    padding-left: 1%;
+    font-size: 5vw;
+}
+header nav ul {
+    list-style: none;
+    background-color: var(--accent-color);
+    padding: 1%;
+    display: flex;
+    gap: 2.5vw;
+    flex-wrap: wrap;
+}
+header nav ul a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.1vw;
+    padding: 1.1vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.7vw;
+    border-style: inset;
+    border-color: var(--background-color);
+    border-radius: 9%;
+}
+header nav ul a:hover {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+main {
+    flex: 1;
+    background-color: var(--background-color);
+    border-color: var(--accent-color);
+    border-style: solid none solid none;
+    border-width: medium;
+}
+h2 {
+    padding: 1%;
+    font-size: 2vw;
+}
+.aboutme {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.profilepic {
+    padding: 0;
+    width: 25%;
+    position: relative;
+    animation: move1 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes move1 {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.profilepic img {
+    width: 100%;
+    border-radius: 15%;
+    border-color: var(--accent-color);
+    border-style: dotted;
+}
+
+#figcaphome {
+    display: flex;
+    justify-content: center;
+}
+.intro {
+    background-color: var(--secondary-color);
+    padding: 4%;
+    width: 25%;
+    border-radius: 15%;
+    border-style: dotted;
+    border-color: var(--accent-color);
+    position: relative;
+    animation: move2 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes move2 {
+    0% {
+        right: 100vw;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.interests {
+    padding: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.interest-images {
+    padding: 0;
+    width: 45%;
+}
+
+.interest-images figcaption {
+    display: flex;
+    justify-content: center;
+}
+
+.interest-images img {
+    width: 100%;
+    border-radius: 15%;
+    border-color: var(--accent-color);
+    border-style: dotted;
+    display: block;
+}
+
+.interest-para {
+    background-color: var(--secondary-color);
+    border-radius: 15%;
+    border-color: var(--accent-color);
+    border-style: dotted;
+    width: 60%;
+    padding: 2%;
+}
+
+.interest-card {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    width: 45%;
+    align-items: center;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills {
+    padding: 0;
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.hard-skills {
+    margin: 2%;
+    text-align: center;
+    margin: 5%;
+    padding: 2%;
+    background-color: var(--secondary-color);
+    border-radius: 15%;
+    border-color: var(--accent-color);
+    border-style: dotted;
+    width: 20%;
+}
+
+.soft-skills {
+    margin: 2%;
+    text-align: center;
+    margin: 5%;
+    padding: 2%;
+    background-color: var(--secondary-color);
+    border-radius: 15%;
+    border-color: var(--accent-color);
+    border-style: dotted;
+    width: 20%;
+}
+
+#brain {
+    padding-top: 8%;
+    font-size: 6rem;
+    position: relative;
+    animation: brainrotate 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+@keyframes brainrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.experience-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.work-history {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.work-item {
+    background-color: var(--secondary-color);
+    border-radius: 15%;
+    width: 80%;
+    margin: 2%;
+    padding: 6%;
+    gap: 1%;
+    border-style: dotted;
+    border-color: var(--accent-color);
+}
+
+.project-item {
+    background-color: var(--secondary-color);
+    border-radius: 15%;
+    padding: 3%;
+    margin: 1%;
+    width: 40%;
+    border-style: dotted;
+    border-color: var(--accent-color);
+}
+
+.project-item img {
+    width: 100%;
+}
+
+.contact-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contactform {
+    padding: 2%;
+    background-color: var(--secondary-color);
+    border-style: dotted;
+    border-color: var(--accent-color);
+    border-radius: 15%;
+    width: 20%;
+    text-align: center;
+}
+
+.contactdetail {
+    padding: 2%;
+    background-color: var(--secondary-color);
+    border-style: dotted;
+    border-color: var(--accent-color);
+    border-radius: 15%;
+    width: 20%;
+    text-align: center;
+}
+
+#phone {
+    margin-top: 5%;
+    font-size: 9rem;
+    position: relative;
+    animation: phonerotate 4s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+@keyframes phonerotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.linkedin {
+    padding: 2%;
+    background-color: var(--secondary-color);
+    border-style: dotted;
+    border-color: var(--accent-color);
+    border-radius: 15%;
+    width: 20%;
+    text-align: center;
+}
+.linkedin img {
+    width: 50%;
+    border-radius: 15%;
+}
+
+.mini-info {
+    margin-top: 5%; 
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 3%;
+    display: flex;
+    gap: 3vw;
+}
+@media screen and (max-width: 768px) {
+    header nav ul a {
+        font-size: 2.2vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2.3vh;
+    }
+
+    .aboutme {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .profilepic {
+        width: 80%;
+    }
+
+    .profilepic img {
+        margin: 2%;
+        width: 100%;
+    }
+    .intro {
+        margin: 2%;
+        width: 80%;
+        text-align: center;
+    }
+    
+    .interest-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .interest-images {
+        width: 100%;
+    }
+    .interest-para {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hard-skills, .soft-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .work-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .project-item {
+        display: flex;
+        padding: 3%;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .experience-page {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: flex-start;
+    }
+    .work-history {
+        width: 90%;
+    }
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .contactform, .linkedin, .contactdetail {
+        display: flex;
+        margin: 2%;
+        padding: 3%;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 812px) and (max-width: 1024px) and (min-height: 1180px) and (max-height: 1368px) {
+    header nav ul a {
+        font-size: 3vh;
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        font-size: 2.3vh;
+    }
+    .aboutme {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profilepic {
+        margin: 2%;
+        width: 80%;
+    }
+
+    .profilepic img {
+        width: 100%;
+    }
+    .intro {
+        width: 80%;
+        margin: 2%;
+        text-align: center;
+    }
+    .interest-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .interest-images {
+        width: 100%;
+    }
+    .interest-para {
+        width: 100%;
+        text-align: center;
+    }
+    .hard-skills, .soft-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .work-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .project-item {
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .experience-page {
+        flex-wrap: wrap;
+        display: flex;
+        align-items: flex-start;
+    }
+    .work-history {
+        width: 90%;
+    }
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contactform, .linkedin, .contactdetail {
+        display: flex;
+        margin: 2%;
+        padding: 3%;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
+    .aboutme {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .profilepic {
+        width: 40%;
+    }
+
+    .profilepic img {
+        width: 100%;
+    }
+    .intro {
+        width: 40%;
+    }
+    .contactform, .linkedin, .contactdetail {
+        width: 30%;
+        margin: 1%;
+        margin-bottom: 2%;
+    }
+}
